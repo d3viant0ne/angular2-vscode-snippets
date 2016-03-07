@@ -1,0 +1,57 @@
+{
+  "Angular 2 Component": {
+    "prefix": "ng2cmp",
+    "body": [
+      "import {Component} from 'angular2/core';",
+      "",
+      "@Component({",
+      "  selector: '${1:selector}',",
+      "  templateUrl: '${2:app}/${3:name}.component.html'",
+      "})",
+      "",
+      "export class ${4:Name}Component {",
+      "  constructor() { }",
+      "}"
+    ]
+  },
+  "Angular 2 Directive": {
+    "prefix": "ng2dir",
+    "body": [
+      "import {Directive} from 'angular2/core';",
+      "",
+      "@Directive({",
+      "  selector: '${1:selector}'",
+      "})",
+      "",
+      "export class ${4:Name}Directive {",
+      "  constructor() { }",
+      "}"
+    ]
+  },
+  "Angular 2 Pipe": {
+    "prefix": "ng2pipe",
+    "body": [
+      "import {Pipe, PipeTransform} from 'angular2/core';",
+      "",
+      "@Pipe({",
+      "  name: '${1:name}'",
+      "})",
+      "export class ${2:PipeName}Pipe implements PipeTransform {",
+      "  transform(value: ${3:type}, args: ${4:type}): any {",
+      "    $0",
+      "  }",
+      "}"
+    ]
+  },
+  "Angular 2 Service": {
+    "prefix": "ng2service",
+    "body": [
+      "import {Injectable} from 'angular2/core';",
+      "",
+      "@Injectable()",
+      "export class ${1:Name}Service {",
+      "  constructor() { }",
+      "}"
+    ]
+  }
+}
